@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- The one touch zoom is boring on retina device => userscalable ?-->
+<meta content="initial-scale=1, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width" name="viewport">
+<title>Fabrice Vignals Github</title>
+<!-- START CSS BY FILE -->
+<link href="_assets/libs/normalize-2.1.3.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<!-- END CSS BY FILE -->
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.png">
+<style>
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, img, small, sub, b, dl, dd, dt, ul, li, label, article, details, footer, header, menu, nav, input, textarea, select {
+	background: transparent;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+html, body {
+	font-family: 'Open Sans', serif;
+	font-size: 14px;
+	height: 100%;
+	width: 100%;
+	color: #666;
+	background: #fff;
+}
+strong {
+	color: #000;
+}
+h1 {
+	font-size: 38.5px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 31.5px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 24.5px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h4 {
+	font-size: 17.5px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h5 {
+	font-size: 14.0px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h6 {
+	font-size: 11.9px;
+	color: #222222;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p {
+	line-height: 25px;
+	color: #666;
+}
+p.notice {
+ background-color:#;
+	background: none repeat scroll 0 0 #D8ECF5;
+	border: 1px solid #9AC9DF;
+	color: #528DA9;
+	border-radius: 3px;
+	padding: 5px 10px 8px 10px;
+	margin: 20px 0;
+}
+span.blue-button {
+	background: #0088CC;
+	color: #fff;
+	border-radius: 3px;
+	padding: 2px 8px 2px 8px;
+	font-size: 12px;
+}
+span.red-text {
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+	color: #DD1144;
+	padding: 2px 8px;
+	font-size: 13px;
+}
+code {
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+	color: #DD1144;
+	padding: 2px 8px;
+	font-size: 13px;
+}
+pre {
+	background-color: #F7F7F9;
+	border: 1px solid #E1E1E8;
+	color: #333;
+	padding: 10px 10px;
+	font-size: 14px;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
+	line-height: 20px;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+}
+li {
+	padding: 8px 0 0 0;
+	line-height: 25px;
+}
+b {
+	color: #222;
+}
+hr {
+	height: 1px;
+	background: #eeeeee;
+	border: 0;
+	width: 100%;
+	padding: 0;
+	margin: 40px 0 60px 0;
+}
+a {
+	text-decoration: none;
+	color: #0088CC;
+	-webkit-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+	-moz-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+	-ms-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+	-o-transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+	transition: background-color .3s ease, border .3s ease, color .3s ease, opacity .3s ease-in-out, outline .3s ease;
+}
+a:hover, a > *:hover {
+	color: #005580;
+	text-decoration: underline;
+}
+#content {
+	height: auto;
+	margin: 0 auto;
+	background: #FFF;
+	padding-top: 80px;
+}
+#header {
+	background-color: #222;
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+#header h4 {
+	color: #fff;
+	line-height: 50px;
+	margin: 0;
+}
+#overview {
+	background-color: #EEEEEE;
+	border-radius: 5px;
+	min-height: 100px;
+	padding: 30px;
+	width: auto;
+	margin-bottom: 60px;
+}
+.btn-image {
+	padding: 12px 15px 12px 45px;
+	background: url(../assets/link.png) no-repeat 15px 10px #ef4a4a;
+	;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	line-height: 16px;
+}
+.image {
+	margin-top: 30px;
+	transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+}
+.image img {
+	display: block;
+}
+.image:hover {
+}
+.lists li {
+	background: url(../assets/news-list-ico.png) no-repeat 0 10px;
+	display: block;
+	padding: 0px 0 6px 14px;
+	color: #666;
+	margin-left: 15px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+#container #content p {
+	color: #F00;
+}
+#container #content p {
+	color: #000;
+}
+.one_half {
+	width: 48%;
+}
+.one_third {
+	width: 30.6%;
+}
+.one_fourth {
+	width: 22%;
+}
+.one_fifth {
+	width: 16.8%;
+}
+.one_sixth {
+	width: 13.33%;
+}
+.two_fifth {
+	width: 37.6%;
+}
+.two_fourth {
+	width: 48%;
+}
+.two_third {
+	width: 65.33%;
+}
+.three_fifth {
+	width: 58.4%;
+}
+.three_fourth {
+	width: 74%;
+}
+.four_fifth {
+	width: 79.2%;
+}
+.five_sixth {
+	width: 82.67%;
+}
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .two_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 4%;
+	position: relative;
+	height: inherit;
+}
+.last {
+	margin-right: 0px!important;
+}
+.container {
+	padding: 0px 40px;
+	margin: 0 auto;
+	width: 80%;
+}
+p.intro {
+	margin-bottom: 35px;
+	font-size: 21px;
+	line-height: 28px;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+  <div class="container">
+    <h4>Fabrice Vignals</h4>
+  </div>
+</div>
+
+<!-- Container -->
+<div id="content">
+  <div class="container">
+    <div id="overview">
+      <h1>Welcome To My Github Page</h1>
+    </div>
+    <h2>Projects Road Map:</h2>
+    <ol>
+      <li><b>Light Html5 First mobile Frontend</b> – A lot of Front-End a this time but too heavy for just 1 or some pages.</li>
+      <li><b>js Ajax and Data library</b> – Jquery just give the tools to built the engine.</li>
+      <li><b>Documentations</b> - Light and easy for Html5, CSS3, Js, Jq ...</li>
+      <li><strong>Design - </strong> Php.net ... I don't like it on my phone.</li>
+      <li><strong>Dreamweaver</strong> - my extend configuration.</li>
+    </ol>
+    <hr>
+    <h2>LH5FM ...</h2>
+    <p class="intro">A light html5 first mobile frontend.</p>
+    <p>Created: 2014-01-13</p>
+    <p>Need a name ... or not.</p>
+    <br>
+    <hr>
+    <h3>Color Style</h3>
+    <p>Our template include 5 color layouts. The css color style are imported into <b>style.css</b></p>
+    <br>
+    <p>Here are the styles for each ui style:</p>
+    <br>
+    <p><b> White</b> : front-white, back-white.</p>
+    <p><b>Black</b> : </p>
+    <p><b>Light Grey</b></p>
+    <p><b>Dark Grey<br>
+      </b></p>
+    <p><b>Colors ...</b> </p>
+    <hr>
+    <h2>Credits</h2>
+    <p>They help us a lot and are making the web. </p>
+    <hr>
+    <h3>Scripts</h3>
+    <p>The Plugins/Components that I used to make this page:</p>
+    <br>
+    <ul class="lists">
+      <li><a target="_blank" href="https://github.com/aFarkas/html5shiv">Html5Shiv</a> - This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer.</li>
+      <li><a target="_blank" href="https://github.com/scottjehl/Respond">Respond.js</a> - A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, and more)</li>
+      <li><a target="_blank" href="http://necolas.github.io/normalize.css">Normalize</a> &#8212; A modern, HTML5-ready, CSS resets. </li>
+    </ul>
+    <hr>
+    <h3>Icons</h3>
+    <p>I used icons for this page from:</p>
+    <br>
+    <ul class="lists">
+      <li><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> </li>
+    </ul>
+    <hr>
+    <h3>Fonts</h3>
+    <p>I used for this page google font library</p>
+    <br>
+    <ul class="lists">
+      <li><a target="_blank" href="http://www.google.com/fonts/">Google fonts</a></li>
+    </ul>
+    <h4> See you next ...</h4>
+    <br>
+    <hr>
+    <p>Fabrice Vignals 2013</p>
+    <br>
+    <br>
+  </div>
+</div>
+<!-- /Container -->
+
+</body>
+</html>
